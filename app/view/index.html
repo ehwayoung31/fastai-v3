@@ -7,10 +7,9 @@
 <body>
 <div>
   <div class='center'>
-    <div class='title'>Classify Bear Images 🐻</div>
+    <div class='title'>신봉선류 연예인 분류기</div>
     <p>
-      Use images of <strong>teddy</strong> bears, <strong>black</strong> bears, <strong>grizzly</strong> bears, or
-      all three!
+      인공지능이 신봉선, 한지민, 아이유의 얼굴을 분류합니다.<br>신봉선, 한지민, 아이유의 사진을 업로드해보세요!
     </p>
     <div class='content'>
       <div class='no-display'>
@@ -21,15 +20,15 @@
                accept='image/*'
                onchange='showPicked(this)'>
       </div>
-      <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
+      <button class='choose-file-button' type='button' onclick='showPicker()'>이미지 올리기</button>
       <div class='upload-label'>
-        <label id='upload-label'>No file chosen</label>
+        <label id='upload-label'>파일이 선택되지 않았습니다.</label>
       </div>
       <div>
         <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
       </div>
       <div class='analyze'>
-        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
+        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>결과 보기</button>
       </div>
       <div class='result-label'>
         <label id='result-label'></label>
